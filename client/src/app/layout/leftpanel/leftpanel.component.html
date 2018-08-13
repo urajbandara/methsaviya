@@ -1,0 +1,27 @@
+<mat-sidenav-container class="app-sidenav-container" hasBackDrop="false" >
+  <mat-sidenav #sidenav mode="push"  opened="true">
+      <mat-nav-list class="app-sidenav-list">
+          <mat-list-item>
+            <button mat-icon-button (click)="isExpanded=!isExpanded">
+              <!-- <mat-icon *ngIf="!isExpanded">chevron_right</mat-icon> -->
+              <mat-icon >menu</mat-icon>
+            </button>
+          </mat-list-item>
+          <mat-list-item [routerLink]="['/dashboard']">
+            <mat-icon mat-list-icon>home</mat-icon>
+            <p matLine *ngIf="isExpanded">Dashboard</p>
+         </mat-list-item>
+          <mat-list-item [routerLink]="['/cashflow']">
+              <mat-icon mat-list-icon>monetization_on</mat-icon>
+              <p matLine *ngIf="isExpanded">Receipt</p>
+          </mat-list-item>
+          <mat-list-item  [routerLink]="['/members']">
+            <mat-icon mat-list-icon>how_to_reg</mat-icon>
+              <p matLine *ngIf="isExpanded">Members</p>
+           </mat-list-item>
+        </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="app-sidenav-content">
+        <router-outlet></router-outlet> 
+  </mat-sidenav-content>
+</mat-sidenav-container>

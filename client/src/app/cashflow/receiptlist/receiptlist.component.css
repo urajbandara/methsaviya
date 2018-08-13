@@ -1,0 +1,28 @@
+.mat-table{
+    flex-basis: 70%;
+}
+.mat-cell{
+    margin:2px;
+    padding: 5px !important;
+}
+
+.mat-header-cell{
+    text-align: center;
+    padding: 5px !important;
+}
+
+.mat-column-receiptno{
+    width:10%;
+}
+
+.mat-column-name {
+    width:30%;
+}
+
+.mat-column-amount {
+    width:20%;
+}
+
+.mat-column-date {
+    width:20%;
+}

@@ -1,0 +1,40 @@
+<mat-card class="col-12">
+  <mat-card-title>Members in Batch :
+    <mat-form-field>
+      <mat-select class="col-3">
+        <mat-option value="option">30</mat-option>
+        <mat-option value="option">31</mat-option>
+        <mat-option value="option">32</mat-option>
+        <mat-option value="option">33</mat-option>
+        <mat-option value="option">34</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="gotoNewMember()">
+      <mat-icon>add</mat-icon> New Member
+    </button>
+  </mat-card-title>
+  <mat-card-content>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="memberno">
+        <th mat-header-cell *matHeaderCellDef>Member No</th>
+        <td mat-cell *matCellDef="let element"> {{element.memberno}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <!-- Amount Column -->
+      <ng-container matColumnDef="membersince">
+        <th mat-header-cell *matHeaderCellDef>Member Since</th>
+        <td mat-cell *matCellDef="let element"> {{element.membersince}} </td>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </mat-card-content>
+</mat-card>

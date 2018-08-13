@@ -1,0 +1,10 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body { margin: 0; }
+table { 
+    width:100%;
+    flex-basis: 50%;
+}
+div{
+    display:flex;
+}
