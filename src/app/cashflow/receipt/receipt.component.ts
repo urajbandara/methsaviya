@@ -25,6 +25,14 @@ export class ReceiptComponent implements OnInit {
     console.log(member);
   }
 
+  save(){
+
+  }
+
+  dismiss(){
+    
+  }
+
 
   
 
