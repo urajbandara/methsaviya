@@ -1,7 +1,8 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 body { margin: 0; }
-table { 
+table {
+    display: table; 
     width:100%;
     flex-basis: 75%;
 }
