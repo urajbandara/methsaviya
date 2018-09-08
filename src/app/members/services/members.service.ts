@@ -10,15 +10,15 @@ export class MembersService {
 
   constructor(private http: Http) { }
 
-  // getMembers():Observable<any>{
-  //   return this.http.get(environment.apiUrl + "api/members").pipe(
-  //     map(res => res.json())
-  //   )
+  getMembers():Observable<any>{
+    return this.http.get(environment.apiUrl + "api/members").pipe(
+      map(res => res.json())
+    )
       
-  // }
-
-  getMembers(){
-    
   }
+
+  // getMembers(){
+    
+  // }
 
 }
