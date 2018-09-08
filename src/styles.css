@@ -3,8 +3,8 @@
 body { margin: 0; }
 table { 
     width:100%;
-    flex-basis: 50%;
+    flex-basis: 75%;
 }
 div{
-    display:flex;
+    display:block;
 }
